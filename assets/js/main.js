@@ -75,6 +75,28 @@ function typeEffect() {
 // Start the animation when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     typeEffect();
+    
+    // Header transparency on scroll
+    const header = document.querySelector('.l-header');
+    let lastScroll = 0;
+    const scrollThreshold = 100; // Pixels to scroll before changing transparency
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        // Add/remove transparent class based on scroll position
+        if (currentScroll > 10) {
+            header.classList.add('scrolled');
+            // Calculate opacity based on scroll position (0.9 at top to 1 at scrollThreshold)
+            const opacity = Math.min(0.9 + (Math.min(currentScroll, scrollThreshold) / scrollThreshold) * 0.1, 1);
+            header.style.backgroundColor = `rgba(var(--body-color-rgb), ${opacity})`;
+        } else {
+            header.classList.remove('scrolled');
+            header.style.backgroundColor = 'transparent';
+        }
+        
+        lastScroll = currentScroll;
+    });
 });
 
 /*===== THEME SWITCHING =====*/
