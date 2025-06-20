@@ -9,7 +9,9 @@
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
+  --first-color-rgb: 102, 146, 255;
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color-rgb: 33, 69, 126;
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -613,14 +615,28 @@ body.dark-theme .footer__copy {
   margin-right: var(--mb-2);
 }
 
+/*===== HEADER =====*/
 .l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0);
+    backdrop-filter: blur(0);
+    transition: all 0.3s ease;
+}
+
+.l-header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+/* Dark theme support */
+body.dark-theme .l-header.scrolled {
+    background-color: rgba(10, 10, 10, 0.9);
 }
 
 /*===== NAV =====*/
