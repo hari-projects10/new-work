@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header" style="background-color: var(--body-color);">
+        <nav class="nav bd-grid" style="background-color: inherit;">
+            <div>
+                <a href="#" class="nav__logo" style="color: var(--text-color);">HARISANKAR<span class="nav__logo-dot" style="color: var(--first-color);">.</span></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav-list" style="background-color: transparent;">
+                    <li class="nav__item" style="background-color: transparent;"><a href="#home" class="nav__link active" style="color: var(--text-color);">Home</a></li>
+                    <li class="nav__item" style="background-color: transparent;"><a href="#about" class="nav__link" style="color: var(--text-color);">About</a></li>
+                    <li class="nav__item" style="background-color: transparent;"><a href="#skills" class="nav__link" style="color: var(--text-color);">Skills</a></li>
+                    <li class="nav__item" style="background-color: transparent;"><a href="#work" class="nav__link" style="color: var(--text-color);">Works</a></li>
+                    <li class="nav__item" style="background-color: transparent;"><a href="#contact" class="nav__link" style="color: var(--text-color);">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <i class='bx bx-moon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Harisankar M</span><br><span class="profession-text">Web Developer</span></h1>
+
+                <div class="home__buttons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harisankarm564@gmail.com&su=Portfolio%20Contact" class="button" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <a href="assets/impfiles/hari.pdf" class="button button--download" download>Download CV</a>
+                </div>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/harisankarm/" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/harihari564" class="home__social-icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="assets/img/perfil.png" alt="Profile Image">
+                    </div>
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="flipbook-container">
+                <div class="flipbook" id="flipbook">
+                    <!-- Page 1 (Front) -->
+                    <div class="page page-1" onclick="flipPage(1)">
+                        <div class="page-content">
+                            <h3 class="page-title">Introduction</h3>
+                            <div class="page-text">
+                                <p>I'm Hari Sankar M, a Computer Science and Engineering graduate with a strong foundation in programming, design thinking, and problem-solving. I approach technology with precision and clarity, focusing on building efficient,
+                                    user-centered solutions that meet real-world needs.</p>
+                                <p>Graduated with a B.Tech in Computer Science and Engineering, securing a CGPA of 9.26/10.</p>
+                            </div>
+                            <div class="page-number">1/4</div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 - New Page -->
+                    <div class="page page-2" onclick="flipPage(2)">
+                        <div class="page-content">
+                            <h3 class="page-title">What do I Help?</h3>
+                            <div class="page-text">
+                                <p>I help turn ideas into elegant digital experiences through a blend of software development, UI/UX design, and web development. Whether it's building clean, scalable code, crafting intuitive user interfaces, or delivering
+                                    responsive, high-performance websites — I focus on creating solutions that are both functional and user-centered.</p>
+                            </div>
+                            <div class="page-number">2/4</div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3 (Previous Page 2) -->
+                    <div class="page page-3" onclick="flipPage(3)">
+                        <div class="page-content">
+                            <h3 class="page-title">My Approach</h3>
+                            <div class="page-text">
+                                <p>With a disciplined and structured mindset, I value clean code, thoughtful design, and consistent growth. My technical expertise is backed by hands-on experience, and I strive to align every line of code with purpose and
+                                    usability.
+                                </p>
+                            </div>
+                            <div class="page-number">3/4</div>
+                        </div>
+                    </div>
+
+                    <!-- Page 4 (Previous Page 3) -->
+                    <div class="page page-4" onclick="flipPage(4)">
+                        <div class="page-content">
+                            <h3 class="page-title">My Philosophy</h3>
+                            <div class="page-text">
+                                <p>I believe in continuous learning, collaboration, and delivering work that reflects both quality and intent. Whether working independently or as part of a team, I bring focus, accountability, and a high standard of execution
+                                    to every task.</p>
+                            </div>
+                            <div class="page-number">4/4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="flip-nav prev" onclick="flipToPrev()">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <button class="flip-nav next" onclick="flipToNext()">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+
+                <!-- Page Indicators -->
+                <div class="page-indicators">
+                    <span class="indicator active" data-page="1"></span>
+                    <span class="indicator" data-page="2"></span>
+                    <span class="indicator" data-page="3"></span>
+                    <span class="indicator" data-page="4"></span>
+                </div>
+            </div>
+        </section>
+
+        <!--===== 3D WORKSPACE =====-->
+        <section class="workspace section" id="workspace">
+            <h2 class="section-title">My Workspace</h2>
+            <div class="workspace-container">
+                <div class="desk">
+                    <!-- Laptop -->
+                    <div class="desk-item laptop" onclick="window.location.href='#work'">
+                        <div class="laptop-screen">
+                            <div class="screen-content">My Works</div>
+                        </div>
+                        <div class="laptop-base"></div>
+                    </div>
+
+                    <!-- Notepad -->
+                    <div class="desk-item notepad" onclick="window.location.href='#blog'">
+                        <div class="notepad-cover">Blog</div>
+                        <div class="notepad-paper"></div>
+                    </div>
+
+                    <!-- Books/Folder -->
+                    <div class="desk-item books" onclick="window.open('https://www.linkedin.com/in/harisankarm/details/certifications/', '_blank')">
+                        <div class="book book-1">
+                            <div class="book-cover">Certificates</div>
+                        </div>
+                        <div class="book book-2"></div>
+                    </div>
+
+                    <!-- Mug -->
+                    <div class="desk-item mug" id="mug">
+                        <div class="mug-body"></div>
+                        <div class="mug-handle"></div>
+                        <div class="steam">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="easter-egg">Keep building.</div>
+                    </div>
+
+                    <!-- Smartphone -->
+                    <div class="desk-item smartphone" onclick="window.location.href='#contact'">
+                        <div class="phone-screen">
+                            <div class="notification"></div>
+                            <div class="phone-text">Contact Me</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Card -->
+                    <div class="desk-item tools-card" title="View my tools">
+                        <div class="tools-content">
+                            <div class="tool-icon"><i class='bx bxl-visual-studio'></i></div>
+                            <div class="tool-icon"><i class='bx bxl-figma'></i></div>
+                            <div class="tool-icon"><i class='bx bxl-github'></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">My Skills & Tools</h2>
+            <p class="skills-subtitle">Technologies I've Explored and Utilized in My Development Journey</p>
+
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="skills-tab">Skills</button>
+                    <button class="tab-btn" data-tab="tools-tab">Tools</button>
+                </div>
+
+                <div class="tab-content active" id="skills-tab">
+                    <div class="skills-grid">
+                        <!-- Row 1 -->
+                        <div class="skill-card" data-tooltip="Python">
+                            <img src="assets/Icons/icons8-python-50.png" alt="Python">
+                        </div>
+                        <div class="skill-card" data-tooltip="HTML5">
+                            <img src="assets/Icons/icons8-html-5-50.png" alt="HTML5">
+                        </div>
+                        <div class="skill-card" data-tooltip="CSS3">
+                            <img src="assets/Icons/icons8-css3-50.png" alt="CSS3">
+                        </div>
+                        <div class="skill-card" data-tooltip="JavaScript">
+                            <img src="assets/Icons/icons8-javascript-50.png" alt="JavaScript">
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="skill-card" data-tooltip="React.js">
+                            <img src="assets/Icons/icons8-react-native-50.png" alt="React">
+                        </div>
+                        <div class="skill-card" data-tooltip="MongoDB">
+                            <img src="assets/Icons/icons8-mongodb-50.png" alt="MongoDB">
+                        </div>
+                        <div class="skill-card" data-tooltip="Tailwind CSS">
+                            <img src="assets/Icons/icons8-tailwindcss-50.png" alt="Tailwind CSS">
+                        </div>
+                        <div class="skill-card" data-tooltip="Bootstrap">
+                            <img src="assets/Icons/bootstrap.png" alt="Bootstrap">
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="skill-card" data-tooltip="OpenCV">
+                            <img src="assets/Icons/icons8-opencv-50.png" alt="OpenCV">
+                        </div>
+                        <div class="skill-card" data-tooltip="Vue.js">
+                            <img src="assets/Icons/icons8-vue-js-50.png" alt="Vue.js">
+                        </div>
+                        <div class="skill-card" data-tooltip="Firebase">
+                            <img src="assets/Icons/firebase.png" alt="Firebase">
+                        </div>
+                        <div class="skill-card" data-tooltip="RESTful APIs">
+                            <img src="assets/Icons/restful api.png" alt="RESTful APIs">
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="skill-card" data-tooltip="C">
+                            <img src="assets/Icons/icons8-c-programming-50.png" alt="C">
+                        </div>
+                        <div class="skill-card" data-tooltip="Java">
+                            <img src="assets/Icons/icons8-java-50.png" alt="Java">
+                        </div>
+                        <div class="skill-card" data-tooltip="AWS">
+                            <img src="assets/Icons/icons8-amazon-web-services-50.png" alt="AWS">
+                        </div>
+                        <div class="skill-card" data-tooltip="Django">
+                            <img src="assets/Icons/icons8-django-50.png" alt="Django">
+                        </div>
+
+                        <!-- Row 5 -->
+                        <div class="skill-card" data-tooltip="PHP">
+                            <img src="assets/Icons/php.png" alt="PHP">
+                        </div>
+                        <div class="skill-card" data-tooltip="TypeScript">
+                            <img src="assets/Icons/icons8-typescript-50.png" alt="TypeScript">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tools-tab">
+                    <div class="skills-grid">
+                        <!-- Row 1 -->
+                        <div class="skill-card" data-tooltip="Visual Studio Code">
+                            <img src="assets/Icons/visual studio code.png" alt="VS Code">
+                        </div>
+                        <div class="skill-card" data-tooltip="Git">
+                            <img src="assets/Icons/icons8-git-50.png" alt="Git">
+                        </div>
+                        <div class="skill-card" data-tooltip="Figma">
+                            <img src="assets/Icons/icons8-figma-50.png" alt="Figma">
+                        </div>
+                        <div class="skill-card" data-tooltip="Adobe XD">
+                            <img src="assets/Icons/icons8-adobe-xd-50.png" alt="Adobe XD">
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="skill-card" data-tooltip="Adobe Photoshop">
+                            <img src="assets/Icons/icons8-adobe-photoshop-50.png" alt="Photoshop">
+                        </div>
+                        <div class="skill-card" data-tooltip="Power BI">
+                            <img src="assets/Icons/powerbi.png" alt="Power BI">
+                        </div>
+                        <div class="skill-card" data-tooltip="Microsoft Office">
+                            <img src="assets/Icons/icons8-microsoft-office-2019-50.png" alt="Office">
+                        </div>
+                        <div class="skill-card" data-tooltip="Vercel">
+                            <img src="assets/Icons/vercel.png" alt="Vercel">
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="skill-card" data-tooltip="npm">
+                            <img src="assets/Icons/icons8-npm-50.png" alt="npm">
+                        </div>
+                        <div class="skill-card" data-tooltip="Node.js">
+                            <img src="assets/Icons/icons8-nodejs-50.png" alt="Node.js">
+                        </div>
+                        <div class="skill-card" data-tooltip="Trello">
+                            <img src="assets/Icons/trello.png" alt="Trello">
+                        </div>
+                        <div class="skill-card" data-tooltip="Windsurf">
+                            <img src="assets/Icons/winsurf.png" alt="Windsurf">
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="skill-card" data-tooltip="WAMP">
+                            <img src="assets/Icons/WAMP.png" alt="WAMP">
+                        </div>
+                        <div class="skill-card" data-tooltip="Replit">
+                            <img src="assets/Icons/icons8-replit-50.png" alt="Replit">
+                        </div>
+                        <div class="skill-card" data-tooltip="OneDrive">
+                            <img src="assets/Icons/icons8-onedrive-50.png" alt="OneDrive">
+                        </div>
+                        <div class="skill-card" data-tooltip="Google Colab">
+                            <img src="assets/Icons/icons8-google-colab-50.png" alt="Google Colab">
+                        </div>
+                        <div class="skill-card" data-tooltip="GitHub">
+                            <img src="assets/Icons/icons8-github-50.png" alt="GitHub">
+                        </div>
+                        <div class="skill-card" data-tooltip="XAMPP">
+                            <img src="assets/Icons/XAMPP.png" alt="XAMPP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">My Works</h2>
+            <p class="work-intro">Here are some of my most significant projects that showcase my skills and expertise.</p>
+
+            <div class="work__container bd-grid">
+                <div class="project-card">
+                    <a href="tastyworld.html" class="work__img">
+                        <img src="assets/works/1.png" alt="TastyWorld - Food Delivery">
+                        <div class="project-overlay">
+                            <h3>TastyWorld</h3>
+                            <p>Food Delivery Platform</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="clickart.html" class="work__img">
+                        <img src="assets/works/2.png" alt="ClickArt - AI eCommerce">
+                        <div class="project-overlay">
+                            <h3>ClickArt</h3>
+                            <p>AI-Powered eCommerce</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="depression-detection.html" class="work__img">
+                        <img src="assets/works/3.png" alt="Depression Detection System">
+                        <div class="project-overlay">
+                            <h3>Depression Detection</h3>
+                            <p>AI Mental Health System</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="more-projects">
+                <span class="more-text">And many more projects</span>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form id="contactForm" class="contact__form">
+                    <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                    <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                    <textarea id="message" cols="0" rows="10" class="contact__input" placeholder="Your message" required></textarea>
+                    <button type="submit" class="contact__button button">Send Message</button>
+                </form>
+            </div>
+
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Get form values
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    // Validate email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Please enter a valid email address');
+                        return;
+                    }
+
+                    // Encode the message for URL
+                    const subject = `Message from ${name} (${email})`;
+                    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message.replace(/\n/g, '%0D%0A')}`;
+
+                    // Create Gmail compose URL
+                    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=harisankarm564@gmail.com&su=${encodeURIComponent(subject)}&body=${body}`;
+
+                    // Open Gmail in a new tab
+                    window.open(gmailUrl, '_blank');
+
+                    // Reset form
+                    this.reset();
+
+                    // Show success message
+                    alert('Thank you! Please complete sending the email in the opened Gmail window.');
+                });
+            </script>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Harisankar M</p>
+        <div class="footer__social" style="justify-content: center;">
+            <a href="https://www.instagram.com/harisankarrajasree?igsh=NDY2MWt3M2E2cnNk&utm_source=qr" class="footer__icon" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p class="footer__copy">&#169;Harisankar<span style="color: var(--first-color);">.</span> All rights reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== SKILL CARDS JS =====-->
+    <script src="assets/js/skill-cards.js"></script>
+
+    <!--===== WORKSPACE TOOLS JS =====-->
+    <script src="assets/js/workspace-tools.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/flipbook.js"></script>
+    <script src="assets/js/workspace.js"></script>
+    <script src="assets/js/skills-tabs.js"></script>
+
+    <!--===== SKILL TOOLTIPS JS =====-->
+    <script src="assets/js/skill-tooltips.js"></script>
+</body>
+
+</html>
